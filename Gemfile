@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+# Use postgres as the database for Active Record
+gem 'pg', '0.17.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use SCSS for stylesheets
@@ -32,16 +33,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # use postgreSQL in production on Heroku
 group :production do
-  gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
 end
 
-# use SQLite in development only
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
 end
 
 group :development do
