@@ -13,3 +13,56 @@
  *= require_tree .
  *= require_self
  */
+
+/**
+ * Stlyes for site nav bar
+ *
+*/
+
+.nav-bar {
+	width: 100%;
+}
+
+.nav-links {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+.nav-links-item {
+	display: inline-block;
+}
+
+
+/**
+ * Stlyes for posts
+ *
+*/
+
+.si-container {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+.si-bold-text {
+	font-weight: 700;
+}
+
+.si-tease-image {
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.si-tease-content {
+	display: inline-block;
+}
+
+
+
+
+

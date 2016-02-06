@@ -1,11 +1,16 @@
 Rails.application.routes.draw do
+  # You can have the root of your site routed with "root"
+  root 'static_pages#home'
+
+  get 'signin'  => 'users#show'
+  get 'signup'  => 'users#new'
+  get 'home' => 'static_pages#home'
+  get 'signup' => 'static_pages#signup'
+
   resources :users
   resources :opinions
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
-  root 'users#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
