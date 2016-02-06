@@ -1,0 +1,37 @@
+<%= form_for(@opinion) do |f| %>
+  <% if @opinion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@opinion.errors.count, "error") %> prohibited this opinion from being saved:</h2>
+
+      <ul>
+      <% @opinion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :option_one %><br>
+    <%= f.text_area :option_one %>
+  </div>
+  <div class="field">
+    <%= f.label :option_two %><br>
+    <%= f.text_area :option_two %>
+  </div>
+  <div class="field">
+    <%= f.label :option_one_votes %><br>
+    <%= f.number_field :option_one_votes %>
+  </div>
+  <div class="field">
+    <%= f.label :option_two_votes %><br>
+    <%= f.number_field :option_two_votes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

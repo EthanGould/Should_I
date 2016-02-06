@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Opinions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Option one</th>
+      <th>Option two</th>
+      <th>Option one votes</th>
+      <th>Option two votes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @opinions.each do |opinion| %>
+      <tr>
+        <td><%= opinion.user_id %></td>
+        <td><%= opinion.option_one %></td>
+        <td><%= opinion.option_two %></td>
+        <td><%= opinion.option_one_votes %></td>
+        <td><%= opinion.option_two_votes %></td>
+        <td><%= link_to 'Show', opinion %></td>
+        <td><%= link_to 'Edit', edit_opinion_path(opinion) %></td>
+        <td><%= link_to 'Destroy', opinion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Opinion', new_opinion_path %>
