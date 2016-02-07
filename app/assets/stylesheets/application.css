@@ -15,9 +15,32 @@
  */
 
 /**
- * Stlyes for site nav bar
+ * Site Wide Styles
  *
 */
+
+a:hover {
+	background: none;
+	color: darkblue;
+	transition: color 0.3s;
+}
+
+
+/**
+ * Stlyes for site header
+ *
+*/
+
+.header {
+	width: 100%;
+}
+
+.header-text {
+	font-family: 'Pacifico', cursive;
+	font-size: 26px;
+	text-align: center;
+	color: darkblue;
+}
 
 .nav-bar {
 	width: 100%;
@@ -33,6 +56,12 @@
 
 .nav-links-item {
 	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.nav-links-item a {
+	text-decoration: none;
 }
 
 
@@ -49,6 +78,7 @@
 
 .si-bold-text {
 	font-weight: 700;
+	color: darkblue;
 }
 
 .si-tease-image {
@@ -56,6 +86,8 @@
 	height: 80px;
 	display: inline-block;
 	vertical-align: middle;
+	border: 1px solid #999;
+	border-radius: 5px;
 }
 
 .si-tease-content {
