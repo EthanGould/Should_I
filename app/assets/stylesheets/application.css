@@ -25,6 +25,16 @@ a:hover {
 	transition: color 0.3s;
 }
 
+.si-inline-brand {
+	font-family: 'Pacifico', cursive;
+	color: darkblue;
+}
+
+.si-content-header {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
 
 /**
  * Stlyes for site header
@@ -37,13 +47,14 @@ a:hover {
 
 .header-text {
 	font-family: 'Pacifico', cursive;
-	font-size: 26px;
+	font-size: 30px;
 	text-align: center;
 	color: darkblue;
 }
 
 .nav-bar {
 	width: 100%;
+	margin-bottom: 20px;
 }
 
 .nav-links {
@@ -62,6 +73,14 @@ a:hover {
 
 .nav-links-item a {
 	text-decoration: none;
+}
+
+.si-site-content {
+	max-width: 960px;
+	margin: 0 auto;
+
+	animation-name: fadeIn;
+	animation-duration: 1s;
 }
 
 
@@ -93,7 +112,14 @@ a:hover {
 	display: inline-block;
 }
 
-
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 100%;
+	}
+}
 
 
 

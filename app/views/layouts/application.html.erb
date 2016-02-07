@@ -10,7 +10,9 @@
 <body>
 <%= debug(params) if Rails.env.development? %>
 <%= render '/layouts/header' %>
-<%= yield %>
+<div class="si-site-content">
+	<%= yield %>
+</div>
 
 </body>
 </html>
