@@ -82,11 +82,10 @@ a:hover {
 }
 
 .si-tease-image {
-	width: 80px;
-	height: 80px;
+	width: 70px;
+	height: 70px;
 	display: inline-block;
 	vertical-align: middle;
-	border: 1px solid #999;
 	border-radius: 5px;
 }
 
